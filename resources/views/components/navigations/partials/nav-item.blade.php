@@ -10,7 +10,7 @@
 @endphp
 
 <li {{ $attributes->merge(['class' => "rounded p-2.5 $isActiveClass"]) }}>
-    <a href="{{ $url }}" class="flex items-center text-gray-900 text-sm">
+    <a href="{{ $url }}" class="flex items-center text-sm {{ $isActive ? 'text-black font-semibold' : 'text-gray-500 font-medium' }}">
         @isset($icon)
             {{ $icon }}
         @endisset
